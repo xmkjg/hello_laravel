@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		
+		
+		<script>
+			function fun(){
+				console.log(arguments);
+				console.log(arguments.length);
+				console.log(arguments[2]);
+			}
+			fun(1,2,3);
+		</script>
+		
+		
+		
+		<script>
+			function fun(){
+				var max=arguments[0];
+				for(var i=1;i<arguments.length;i++){
+					if(arguments[i]>max){
+						max=arguments[i];
+					}
+				}
+				return max;
+			}
+			console.log(fun(10,0,30,30,40,50,60));
+		</script>
+		
+		
+		
+		
+		<script>
+		var arr=[10,20,30,405,50];
+		var newarr=[];
+		for(i=arr.length-1;i>=0;i--){
+			newarr[newarr.length]=arr[i];
+		}
+		console.log(newarr);
+		</script>
+		
+		
+		
+		<script >
+		function reverse(arr1){
+			var newarr1=[];
+			for(var i=arr1.length-1;i>=0;i--){
+				newarr1[newarr1.length]=arr1[i];
+			}
+			return newarr1;
+		}
+		var arr1=reverse([10,20,30,40,50,60]);
+		console.log(arr1);
+		</script>
+		
+		
+		
+		<script>
+			function fun(){
+				var year=prompt('请输入年份');
+				if(isleapyear(year)){
+					alert('当前年份是闰年，2月份有29天');
+				}else{
+					alert('当前年份是平年，2月份有28天');
+				}
+				function isleapyear (year){
+				var flag=false;
+				if(year%4==0&&year%100!=0 ||year%400==0){
+					 flag=true;
+				}
+				return flag;
+			}
+			console.log(isleapyear(2020) ? '2020是闰年':'2020不是闰年');
+			console.log(isleapyear(2021)? '2021是闰年':'2021是闰年');
+		
+			}
+			fun();
+		</script>
+	</body>
+</html>

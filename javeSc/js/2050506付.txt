@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+   <!--一.填空题
+	1.Ctrl
+	2.Hello
+	3.ECAMScirpt  Dom   BoM
+	4.123
+   二.判断
+   1.×
+   2.×
+   3.√
+   4.×
+   5.√
+   6.√
+   三.选择题
+   1.c
+   2.c
+   3.B-->
+
+
+
+   <script>
+   	var name=prompt('请输入你的名字');
+   	console.log(name);
+   </script>
+	</body>
+</html>
